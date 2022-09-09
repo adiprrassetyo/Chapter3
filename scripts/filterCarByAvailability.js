@@ -1,7 +1,6 @@
 function filterCarByAvailability(cars) {
   // Sangat dianjurkan untuk console.log semua hal hehe
   console.log(cars);
-  console.log("Availability Sorting Algorithm");
   // Tempat penampungan hasil
   const result = [];
 
@@ -11,6 +10,8 @@ function filterCarByAvailability(cars) {
       result.push(cars[i]);
     }
   }
+  console.log(result);
+  console.table(result);
   // Rubah code ini dengan array hasil filter berdasarkan availablity
   return result;
 }
