@@ -1,9 +1,5 @@
 function sortCarByYearDescendingly(cars) {
-  // Sangat dianjurkan untuk console.log semua hal hehe
-  console.log(cars);
-
-  // Clone array untuk menghindari side-effect
-  // Apa itu side effect?
+  // declare result with spread operator to avoid side  effect
   const result = [...cars];
 
   // Tulis code-mu disini
@@ -16,6 +12,8 @@ function sortCarByYearDescendingly(cars) {
       }
     }
   }
+  // one line, but it's cheating in this challange :(
+  // return[...cars].sort((a,b)=> b.year-a.year)
 
   console.log(result);
   console.table(result);
